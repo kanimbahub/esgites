@@ -4,8 +4,8 @@
       echo "Mise à jour de la liste des paquets"
            apt update
            apt upgrade -y
-           apt install sudo
-           apt install vim
+           apt install sudo -y
+           apt install vim -y
 
 # ETAPE 2: VERIFICATION ET INSTALLATION DES PAQUETS
       echo ""
@@ -103,13 +103,9 @@
       echo ""
       echo "Deployement de votre micro datacenter réussit"
            git clone https://github.com/kanimbahub/esgites.git
-           kanimba
-           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
            cp deployement.sh esgites
            cd esgites
            git add .
            git commit -m"test commit"
            git push
-           kanimba
-           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
 
